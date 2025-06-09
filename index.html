@@ -1848,12 +1848,12 @@
     let shareUrl, shareText;
 
     // Custom message for both platforms
-    const message = `🔥 Join AffiJobs today and earn money by sharing job links! 💰\n\nClick to apply: https://affijobs.com/apply`;
+    const message = `🔥 Join AffiJobs today and earn money by sharing job links! 💰\n\nClick to apply: https://tinyurl.com/254Quick-Jobs`;
 
     if (platform === 'whatsapp') {
         shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
     } else {
-        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://affijobs.com/apply')}&quote=${encodeURIComponent(message)}`;
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://tinyurl.com/254Quick-Jobs')}&quote=${encodeURIComponent(message)}`;
     }
 
     // Add transaction
