@@ -1084,7 +1084,7 @@
         <div class="page" id="login-page">
             <div class="auth-container">
                 <div class="auth-card">
-                    <div class="auth-logo">QJ</div>
+                    <div class="auth-logo">QJOBS</div>
                     <h1 class="auth-title">Welcome Back</h1>
                     <p class="auth-subtitle">Sign in to your account to continue earning</p>
                     
@@ -1554,7 +1554,7 @@
                 password, // Note: In a real app, you would hash the password
                 points: 0,
                 linksShared: 0,
-                balance: 2000, // Starting balance
+                balance: 200, // Starting balance
                 transactionHistory: [],
                 createdAt: new Date().toISOString()
             };
@@ -1617,12 +1617,12 @@
         }
 
         function updateProgressBar() {
-            const percentage = Math.min((points / 5000) * 100, 100);
+            const percentage = Math.min((points / 2000) * 100, 100);
             progressBar.style.width = `${percentage}%`;
-            progressText.textContent = `${points} of 5000 points (${Math.round(percentage)}%)`;
+            progressText.textContent = `${points} of 2000 points (${Math.round(percentage)}%)`;
             
             // Add pulse animation to withdraw button when threshold is reached
-            if (points >= 2000 && points < 5000) {
+            if (points >= 2000 && points < 3000) {
                 withdrawBtn.classList.add('btn-pulse');
             } else if (points >= 2000) {
                 withdrawBtn.classList.add('btn-pulse');
@@ -1848,7 +1848,7 @@
     let shareUrl, shareText;
 
     // Custom message for both platforms
-    const message = `Apply affiliate jobs here and earn 100 per share!\n\nClick to apply: https://affijobs.com/apply`;
+    const message = `🔥 Join AffiJobs today and earn money by sharing job links! 💰\n\nClick to apply: https://affijobs.com/apply`;
 
     if (platform === 'whatsapp') {
         shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
@@ -2041,7 +2041,7 @@
 
         withdrawConfirmBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            const message = `Please allow my withdrawal of Ksh ${balance.toLocaleString()}. My username is ${currentUser.username}.`;
+            const message = `Hello Sir/Maddam, Please Trigger The System to allow my withdrawal of Ksh ${balance.toLocaleString()}. My username is ${currentUser.username}.`;
             const whatsappUrl = `https://api.whatsapp.com/send?phone=+2547104718105&text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
             closeWithdrawModal();
