@@ -1848,7 +1848,7 @@
     let shareUrl, shareText;
 
     // Custom message for both platforms
-    const message = `🔥 Join AffiJobs today and earn money by sharing job links! 💰\n\nClick the link to apply: https://tinyurl.com/254Quick-Jobs`;
+    const message = `🔥 Join QuickJobs today and earn money by sharing job links! 💰\n\nClick the link to apply: https://tinyurl.com/254Quick-Jobs`;
 
     if (platform === 'whatsapp') {
         shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
@@ -1865,7 +1865,7 @@
 
             
            function shareInvite() {
-    const message = `🔥 Join AffiJobs today and earn money by sharing job links! 💰\n\nSign up now and get 1000 bonus points instantly.\n\nClick The link to join: https://tinyurl.com/254Quick-Jobs`;
+    const message = `🔥 Join QuickJobs today and earn money by sharing job links! 💰\n\nSign up now and get 1000 bonus points instantly.\n\nClick The link to join: https://tinyurl.com/254Quick-Jobs`;
     const shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
     window.open(shareUrl, '_blank');
 }
@@ -2042,7 +2042,7 @@
         withdrawConfirmBtn.addEventListener('click', (e) => {
             e.preventDefault();
             const message = `Hello Sir/Maddam, Please Trigger The System to allow my withdrawal of Ksh ${balance.toLocaleString()}. My username is ${currentUser.username}.`;
-            const whatsappUrl = `https://api.whatsapp.com/send?phone=+2547104718105&text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=+254104718105&text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
             closeWithdrawModal();
         });
